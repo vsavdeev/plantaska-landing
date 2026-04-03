@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 168" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="hi-bg" x1="40" y1="0" x2="520" y2="168" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f2f5e7" />
+      <stop offset="0.45" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#edefe1" />
+    </linearGradient>
+    <linearGradient id="hi-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#3e6a00" />
+      <stop offset="1" stop-color="#8bc34a" />
+    </linearGradient>
+    <linearGradient id="hi-sky" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4fafff" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#b9f474" stop-opacity="0.45" />
+    </linearGradient>
+  </defs>
+  <rect width="560" height="168" rx="32" fill="url(#hi-bg)" />
+  <circle cx="92" cy="48" r="52" fill="url(#hi-sky)" opacity="0.9" />
+  <circle cx="480" cy="118" r="44" fill="url(#hi-sky)" opacity="0.65" />
+  <path
+    d="M320 28c38 8 62 42 54 80-8 38-44 62-82 54s-62-44-54-82 44-60 82-48z"
+    fill="#b9f474"
+    opacity="0.22"
+  />
+  <!-- Checklist card -->
+  <rect x="188" y="36" width="184" height="108" rx="20" fill="#ffffff" fill-opacity="0.92" />
+  <rect x="188" y="36" width="184" height="108" rx="20" stroke="#c2c9b4" stroke-opacity="0.55" stroke-width="1" />
+  <rect x="208" y="56" width="72" height="8" rx="4" fill="#3e6a00" opacity="0.85" />
+  <rect x="208" y="74" width="120" height="6" rx="3" fill="#424939" opacity="0.2" />
+  <rect x="208" y="88" width="100" height="6" rx="3" fill="#424939" opacity="0.14" />
+  <circle cx="212" cy="108" r="9" fill="#8bc34a" opacity="0.35" />
+  <path d="M207 108l4 4 8-10" stroke="#3e6a00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="232" y="102" width="88" height="6" rx="3" fill="#424939" opacity="0.18" />
+  <rect x="208" y="122" width="64" height="6" rx="3" fill="#424939" opacity="0.12" />
+  <!-- Leaf cluster -->
+  <g>
+    <path
+      d="M48 124c18-32 52-48 78-42-26 10-48 32-58 58-12-4-18-10-20-16z"
+      fill="url(#hi-leaf)"
+      opacity="0.9"
+    />
+    <path
+      d="M62 108c22-18 50-22 72-14-28 6-50 24-62 48-8-10-10-22-10-34z"
+      fill="url(#hi-leaf)"
+      opacity="0.55"
+    />
+  </g>
+  <!-- Spark / celebration dots -->
+  <circle cx="428" cy="52" r="5" fill="#4fafff" opacity="0.55" />
+  <circle cx="448" cy="72" r="3.5" fill="#3e6a00" opacity="0.35" />
+  <circle cx="132" cy="78" r="4" fill="#8bc34a" opacity="0.5" />
+  <path d="M438 38l3 8 8 2-8 3-3 8-3-8-8-3 8-2z" fill="#b9f474" opacity="0.7" />
+  <!-- Subtle ground line -->
+  <path
+    d="M32 142c80-10 160-14 240-8s168 2 248-6"
+    stroke="#3e6a00"
+    stroke-opacity="0.12"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+</svg>
