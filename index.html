@@ -6,9 +6,9 @@
     <meta
       id="meta-desc"
       name="description"
-      content="Plantaska — локальное приложение для личных мероприятий: даты и дни, задачи с дедлайнами и напоминаниями, бюджет со статьями и взаиморасчётами, участники с RSVP."
+      content="Plantaska — приложение для личных праздников и поездок: задачи, бюджет, гости и напоминания. Всё в одном событии, данные на телефоне."
     />
-    <title id="doc-title">Plantaska — даты, задачи, бюджет и гости в одном приложении</title>
+    <title id="doc-title">Plantaska — праздник и поездка: задачи, бюджет, гости</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +46,7 @@
           </a>
 
           <nav class="nav" data-i18n-aria-label="nav_aria" aria-label="Навигация">
-            <a href="#product" data-i18n="nav_product">Продукт</a>
+            <a href="#product-kicker" data-i18n="nav_product">Продукт</a>
             <a href="#features" data-i18n="nav_features">Возможности</a>
             <a href="#how" data-i18n="nav_how">Как это работает</a>
             <a href="#faq">FAQ</a>
@@ -63,7 +63,7 @@
               <span class="icon" aria-hidden="true">menu</span>
             </summary>
             <nav class="nav-drawer-panel" data-i18n-aria-label="nav_drawer_panel" aria-label="Меню на мобильном">
-              <a href="#product" data-i18n="nav_product">Продукт</a>
+              <a href="#product-kicker" data-i18n="nav_product">Продукт</a>
               <a href="#features" data-i18n="nav_features">Возможности</a>
               <a href="#how" data-i18n="nav_how">Как это работает</a>
               <a href="#faq">FAQ</a>
@@ -79,16 +79,16 @@
         <div class="container">
           <div class="hero-grid">
             <div class="hero-card">
-              <span class="kicker hero-anim hero-anim-1">
+              <span id="product-kicker" class="kicker hero-anim hero-anim-1">
                 <span class="icon" aria-hidden="true" style="color: var(--primary); font-variation-settings: 'FILL' 1, 'wght' 650, 'opsz' 20"
                   >energy_savings_leaf</span
                 >
-                <span class="kicker-text" data-i18n="hero_kicker">Планирование личных мероприятий: от одной даты до нескольких дней подряд</span>
+                <span class="kicker-text" data-i18n="hero_kicker">Для свадьбы, дня рождения или поездки на несколько дней</span>
               </span>
 
-              <h1 class="headline hero-anim hero-anim-2" data-i18n="hero_h1">От идеи — до гостей, задач и бюджета.</h1>
+              <h1 class="headline hero-anim hero-anim-2" data-i18n="hero_h1">Планируй события от путешествий до свадьбы</h1>
 
-              <p class="hero-lead hero-anim hero-anim-3" data-i18n="hero_lead">Планируйте события без суеты</p>
+              <p class="hero-lead hero-anim hero-anim-3" data-i18n="hero_lead">Задачи, деньги и список гостей рядом, без таблиц и хаоса в заметках</p>
 
               <div class="cta-row hero-anim hero-anim-4" role="group" data-i18n-aria-label="hero_cta_aria" aria-label="Основные действия">
                 <a class="btn btn-primary" href="#download" data-i18n-aria-label="hero_dl_aria" aria-label="Перейти к кнопкам App Store и Google Play">
@@ -200,11 +200,9 @@
             <div class="bento" data-i18n-aria-label="bento_aria" aria-label="Ключевые возможности">
             <div class="card muted reveal-on-scroll">
               <div class="card-title headline" data-i18n="feat_event_title">Событие</div>
-              <div class="feature-title headline" data-i18n="feat_event_h">Имя, даты и вкладки по ситуации</div>
+              <div class="feature-title headline" data-i18n="feat_event_h">Имя, даты и вкладки</div>
               <p class="feature-text" data-i18n-html="feat_event_p">
-                У каждого события — название, иконка типа и акцентный цвет. Дата одна или период из нескольких дней: тогда
-                появляется вкладка «Дни» с задачами по каждому дню. Общий лимит бюджета и валюта задаются при создании;
-                вкладку участников можно сразу не включать, если она пока не нужна.
+                Одна дата или несколько дней — тогда появятся «Дни» и задачи по дню. Цвет, иконка, бюджет и гости — по желанию.
               </p>
               <div class="pill-row" data-i18n-aria-label="feat_event_pills_aria" aria-label="Возможности события">
                 <span class="pill"><span class="icon" aria-hidden="true">calendar_month</span> <span data-i18n="feat_event_pill1">дата и период</span></span>
@@ -215,11 +213,9 @@
 
             <div class="card muted reveal-on-scroll">
               <div class="card-title headline" data-i18n="feat_tasks_title">Задачи</div>
-              <div class="feature-title headline" data-i18n="feat_tasks_h">Дни, дедлайны, локальные напоминания</div>
+              <div class="feature-title headline" data-i18n="feat_tasks_h">Сроки и напоминания</div>
               <p class="feature-text" data-i18n-html="feat_tasks_p">
-                Задача с описанием, статусом (в работе, выполнена, отменена) и привязкой к дню события. Для срока
-                указывается дедлайн; при желании планируется <strong>локальное напоминание</strong> на устройстве. После
-                выполнения можно оставить заметку — например ссылку или итог.
+                Список дел по событию: день (если дней несколько), дедлайн и по желанию <strong>напоминание на телефоне</strong>.
               </p>
               <div class="pill-row">
                 <span class="pill"><span class="icon" aria-hidden="true">checklist</span> <span data-i18n="feat_tasks_pill1">статусы</span></span>
@@ -232,11 +228,9 @@
               <div class="card-budget-split-inner">
                 <div class="card-budget-split-text">
                   <div class="card-title headline" data-i18n="feat_budget_title">Бюджет</div>
-                  <div class="feature-title headline" data-i18n="feat_budget_h">Статьи расходов и взаиморасчёты</div>
+                  <div class="feature-title headline" data-i18n="feat_budget_h">Лимит, статьи, «кто кому должен»</div>
                   <p class="feature-text" data-i18n-html="feat_budget_p">
-                    Общий лимит и список статей: у каждой — сумма, кто платил и кому относится расход. Если включить
-                    <strong>взаиморасчёты</strong>, приложение посчитает, кто кому должен, с учётом участников. Прогресс по
-                    лимиту видно на экране бюджета.
+                    Вносите расходы и видите остаток лимита. Включите <strong>взаиморасчёты</strong> — приложение подскажет баланс между участниками.
                   </p>
                   <div class="pill-row">
                     <span class="pill"><span class="icon" aria-hidden="true">account_balance_wallet</span> <span data-i18n="feat_budget_pill1">лимит</span></span>
@@ -245,84 +239,23 @@
                   </div>
                 </div>
                 <div class="card-budget-split-art" aria-hidden="true">
-                  <!-- Inline SVG: same visual language as hero-illustration; avoids broken external file / path issues. -->
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 168" fill="none" role="presentation">
-                    <defs>
-                      <linearGradient id="bdf-bg" x1="20" y1="0" x2="260" y2="168" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#f2f5e7" />
-                        <stop offset="0.45" stop-color="#ffffff" />
-                        <stop offset="1" stop-color="#edefe1" />
-                      </linearGradient>
-                      <linearGradient id="bdf-sky" x1="0" y1="0" x2="1" y2="1">
-                        <stop stop-color="#4fafff" stop-opacity="0.35" />
-                        <stop offset="1" stop-color="#b9f474" stop-opacity="0.45" />
-                      </linearGradient>
-                      <linearGradient id="bdf-leaf" x1="0" y1="0" x2="1" y2="1">
-                        <stop stop-color="#3e6a00" />
-                        <stop offset="1" stop-color="#8bc34a" />
-                      </linearGradient>
-                      <linearGradient id="bdf-bar" x1="0" y1="0" x2="1" y2="0">
-                        <stop stop-color="#3e6a00" />
-                        <stop offset="1" stop-color="#8bc34a" />
-                      </linearGradient>
-                    </defs>
-                    <rect width="280" height="168" rx="28" fill="url(#bdf-bg)" />
-                    <circle cx="48" cy="44" r="40" fill="url(#bdf-sky)" opacity="0.88" />
-                    <circle cx="232" cy="128" r="36" fill="url(#bdf-sky)" opacity="0.6" />
-                    <path
-                      d="M160 22c30 6 48 32 42 60-6 28-34 48-66 42s-48-34-42-62 36-46 66-40z"
-                      fill="#b9f474"
-                      opacity="0.2"
-                    />
-                    <rect x="52" y="34" width="176" height="112" rx="18" fill="#ffffff" fill-opacity="0.92" />
-                    <rect x="52" y="34" width="176" height="112" rx="18" stroke="#c2c9b4" stroke-opacity="0.55" stroke-width="1" />
-                    <rect x="68" y="48" width="88" height="7" rx="3.5" fill="#3e6a00" opacity="0.8" />
-                    <rect x="68" y="62" width="132" height="5" rx="2.5" fill="#424939" opacity="0.16" />
-                    <rect x="68" y="76" width="144" height="9" rx="4.5" fill="#e7eadc" />
-                    <rect x="68" y="76" width="96" height="9" rx="4.5" fill="url(#bdf-bar)" />
-                    <rect x="154" y="72" width="14" height="17" rx="4" fill="#ffffff" stroke="#3e6a00" stroke-width="1.2" opacity="0.95" />
-                    <rect x="68" y="94" width="144" height="22" rx="9" fill="#ffffff" stroke="#c2c9b4" stroke-opacity="0.5" />
-                    <rect x="78" y="102" width="56" height="5" rx="2.5" fill="#3e6a00" opacity="0.3" />
-                    <rect x="152" y="102" width="52" height="5" rx="2.5" fill="#3e6a00" opacity="0.55" />
-                    <rect x="68" y="122" width="144" height="22" rx="9" fill="#ffffff" stroke="#c2c9b4" stroke-opacity="0.4" />
-                    <rect x="78" y="130" width="72" height="5" rx="2.5" fill="#424939" opacity="0.14" />
-                    <rect x="168" y="130" width="36" height="5" rx="2.5" fill="#424939" opacity="0.2" />
-                    <circle cx="248" cy="52" r="14" fill="#8bc34a" opacity="0.35" />
-                    <circle cx="248" cy="52" r="8" fill="#3e6a00" opacity="0.45" />
-                    <circle cx="262" cy="52" r="14" fill="#4fafff" opacity="0.25" />
-                    <circle cx="262" cy="52" r="8" fill="#00629d" opacity="0.35" />
-                    <path d="M254 52h14" stroke="#3e6a00" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.45" />
-                    <path
-                      d="M12 118c14-26 40-40 60-34-20 8-36 26-44 48-10-3-14-8-16-14z"
-                      fill="url(#bdf-leaf)"
-                      opacity="0.88"
-                    />
-                    <path
-                      d="M22 106c18-14 40-18 58-10-22 4-40 20-50 40-6-8-8-18-8-30z"
-                      fill="url(#bdf-leaf)"
-                      opacity="0.5"
-                    />
-                    <circle cx="218" cy="40" r="3.5" fill="#4fafff" opacity="0.5" />
-                    <circle cx="196" cy="26" r="2.5" fill="#8bc34a" opacity="0.55" />
-                    <path
-                      d="M24 138c64-8 128-10 192-6"
-                      stroke="#3e6a00"
-                      stroke-opacity="0.12"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
+                  <img
+                    src="assets/budget-feature-illustration.svg"
+                    width="280"
+                    height="168"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </div>
             </div>
 
             <div class="card muted reveal-on-scroll">
               <div class="card-title headline" data-i18n="feat_guests_title">Участники</div>
-              <div class="feature-title headline" data-i18n="feat_guests_h">Контакты и RSVP</div>
+              <div class="feature-title headline" data-i18n="feat_guests_h">Контакты и кто придёт</div>
               <p class="feature-text" data-i18n-html="feat_guests_p">
-                Имя, телефон, email и Telegram; статусы приглашения и отклика («придёт», «не придёт», приглашён и т.д.).
-                Участники связаны с бюджетом: кто платил и между кем делится расход. Вкладку гостей при создании события
-                можно отключить и включить позже.
+                Список гостей с контактами и статусом ответа. Участники связаны с бюджетом, вкладку можно включить позже.
               </p>
               <div class="pill-row">
                 <span class="pill"><span class="icon" aria-hidden="true">group</span> <span data-i18n="feat_guests_pill1">список</span></span>
@@ -333,11 +266,9 @@
 
             <div class="card muted reveal-on-scroll">
               <div class="card-title headline" data-i18n="feat_list_title">Мои события</div>
-              <div class="feature-title headline" data-i18n="feat_list_h">Список карточек и данные на устройстве</div>
+              <div class="feature-title headline" data-i18n="feat_list_h">Все планы в одном списке</div>
               <p class="feature-text" data-i18n-html="feat_list_p">
-                Все события на одном экране: откройте карточку, чтобы перейти к обзору и вкладкам. Свайп вправо —
-                редактировать, влево — удалить (с подтверждением); потяните список вниз для обновления. Данные хранятся
-                <strong>локально</strong> в приложении на вашем устройстве.
+                Карточки событий на одном экране. Данные хранятся <strong>только на вашем телефоне</strong> — без облака и общего аккаунта.
               </p>
               <div class="pill-row">
                 <span class="pill"><span class="icon" aria-hidden="true">swap_horiz</span> <span data-i18n="feat_list_pill1">свайпы</span></span>
@@ -349,14 +280,13 @@
           </div>
 
           <div class="section" data-i18n-aria-label="screens_section_aria" aria-label="Экраны приложения">
-            <h2 class="headline reveal-on-scroll" data-i18n="screens_h2" style="margin: 0 0 var(--s-4)">Экраны приложения</h2>
+            <h2 class="headline reveal-on-scroll" data-i18n="screens_h2" style="margin: 0 0 var(--s-4)">Как выглядит в телефоне</h2>
             <p
-              class="reveal-on-scroll"
+              class="reveal-on-scroll screens-intro"
               data-i18n-html="screens_intro"
               style="margin: 0; color: color-mix(in srgb, var(--on-surface-variant) 90%, #000); line-height: 1.65; max-width: 68ch"
             >
-              Ниже — фрагменты интерфейса: список событий, обзор с вкладками, бюджет, участники, задачи, план по дням и
-              профиль. Ленту можно листать горизонтально; на тач‑экранах полоса прокрутки обычно видна во время движения.
+              Реальные экраны приложения. Листайте вбок — как в галерее.
             </p>
 
             <div class="shots reveal-on-scroll">
@@ -375,7 +305,7 @@
                     </div>
                     <div class="shot-meta">
                       <p class="shot-title headline" data-i18n="shot1_title">Список событий</p>
-                      <p class="shot-sub" data-i18n-html="shot1_sub">Карточки с датой и статусом; пустой экран подсказывает создать первое событие, иначе — плавающая кнопка «+».</p>
+                      <p class="shot-sub" data-i18n-html="shot1_sub">Все события списком; пустой экран предлагает создать первое.</p>
                     </div>
                   </article>
 
@@ -391,7 +321,7 @@
                     </div>
                     <div class="shot-meta">
                       <p class="shot-title headline" data-i18n="shot2_title">Обзор и вкладки</p>
-                      <p class="shot-sub" data-i18n-html="shot2_sub">Сводка по задачам, бюджету и участникам; сверху — название и дата. Вкладки «Дни» и «Бюджет» появляются, когда заданы период или лимит.</p>
+                      <p class="shot-sub" data-i18n-html="shot2_sub">Сводка сверху; вкладки «Дни» и «Бюджет» — когда нужны.</p>
                     </div>
                   </article>
 
@@ -407,7 +337,7 @@
                     </div>
                     <div class="shot-meta">
                       <p class="shot-title headline" data-i18n="shot3_title">Бюджет события</p>
-                      <p class="shot-sub" data-i18n-html="shot3_sub">Статьи расходов, прогресс по лимиту; при включённых взаиморасчётах и участниках — кто кому должен.</p>
+                      <p class="shot-sub" data-i18n-html="shot3_sub">Статьи расходов и остаток лимита; при взаиморасчётах — баланс между людьми.</p>
                     </div>
                   </article>
 
@@ -423,7 +353,7 @@
                     </div>
                     <div class="shot-meta">
                       <p class="shot-title headline" data-i18n="shot4_title">Участники</p>
-                      <p class="shot-sub" data-i18n-html="shot4_sub">Список с контактами и RSVP; статусы приглашения и отклика отображаются в карточке участника.</p>
+                      <p class="shot-sub" data-i18n-html="shot4_sub">Контакты и RSVP в карточке каждого гостя.</p>
                     </div>
                   </article>
 
@@ -439,7 +369,7 @@
                     </div>
                     <div class="shot-meta">
                       <p class="shot-title headline" data-i18n="shot5_title">Задачи</p>
-                      <p class="shot-sub" data-i18n-html="shot5_sub">Активные и выполненные блоки, фильтр по дням события, дедлайн и опция локального напоминания.</p>
+                      <p class="shot-sub" data-i18n-html="shot5_sub">Сделано и в работе; фильтр по дням, сроки и напоминания.</p>
                     </div>
                   </article>
 
@@ -455,7 +385,7 @@
                     </div>
                     <div class="shot-meta">
                       <p class="shot-title headline" data-i18n="shot6_title">Вкладка «Дни»</p>
-                      <p class="shot-sub" data-i18n-html="shot6_sub">Для событий с несколькими датами: карточки по дням, описание со ссылками и задачи, привязанные к выбранному дню.</p>
+                      <p class="shot-sub" data-i18n-html="shot6_sub">Несколько дней — план по дням, заметки и задачи к выбранной дате.</p>
                     </div>
                   </article>
 
@@ -471,7 +401,7 @@
                     </div>
                     <div class="shot-meta">
                       <p class="shot-title headline" data-i18n="shot7_title">Профиль</p>
-                      <p class="shot-sub" data-i18n-html="shot7_sub">Имя и контакты профиля (локально), тема оформления, язык интерфейса, повтор онбординга и сведения о версии.</p>
+                      <p class="shot-sub" data-i18n-html="shot7_sub">Тема, язык, контакты профиля и версия приложения.</p>
                     </div>
                   </article>
                 </div>
@@ -510,7 +440,7 @@
 
       <section class="section" id="how" data-i18n-aria-label="how_section_aria" aria-label="Как это работает">
         <div class="container">
-          <h2 class="headline reveal-on-scroll" data-i18n="how_h2">Как устроено планирование в Plantaska</h2>
+          <h2 class="headline reveal-on-scroll" data-i18n="how_h2">Три простых шага</h2>
 
           <div class="grid-2">
             <div class="steps" data-i18n-aria-label="how_steps_aria" aria-label="Шаги">
@@ -518,13 +448,12 @@
                 <div class="step-head">
                   <div style="display: flex; align-items: center; gap: 12px">
                     <div class="step-num">1</div>
-                    <p class="step-title headline" data-i18n="how_step1_t">Создайте событие</p>
+                    <p class="step-title headline" data-i18n="how_step1_t">Событие</p>
                   </div>
                   <span class="icon" aria-hidden="true" style="color: var(--primary)">event_upcoming</span>
                 </div>
                 <p class="step-body" data-i18n-html="how_step1_b">
-                  Название, иконка типа мероприятия и акцентный цвет; одна дата или период из нескольких дней. При
-                  необходимости задайте лимит бюджета и валюту, включите вкладку участников и режим взаиморасчётов.
+                  Название, дата или несколько дней, цвет. При желании — лимит бюджета и список гостей.
                 </p>
               </div>
 
@@ -532,13 +461,12 @@
                 <div class="step-head">
                   <div style="display: flex; align-items: center; gap: 12px">
                     <div class="step-num">2</div>
-                    <p class="step-title headline" data-i18n="how_step2_t">Разложите подготовку</p>
+                    <p class="step-title headline" data-i18n="how_step2_t">Задачи</p>
                   </div>
                   <span class="icon" aria-hidden="true" style="color: var(--primary)">checklist</span>
                 </div>
                 <p class="step-body" data-i18n-html="how_step2_b">
-                  Добавляйте задачи с описанием, привязкой к дню (если дней несколько) и дедлайном. Отмечайте выполнение,
-                  при необходимости включайте напоминание на устройстве.
+                  Разложите подготовку по делам, срокам и напоминаниям — в том числе по дням поездки.
                 </p>
               </div>
 
@@ -546,23 +474,21 @@
                 <div class="step-head">
                   <div style="display: flex; align-items: center; gap: 12px">
                     <div class="step-num">3</div>
-                    <p class="step-title headline" data-i18n="how_step3_t">Держите бюджет и гостей под контролем</p>
+                    <p class="step-title headline" data-i18n="how_step3_t">Деньги и гости</p>
                   </div>
                   <span class="icon" aria-hidden="true" style="color: var(--primary)">account_balance_wallet</span>
                 </div>
                 <p class="step-body" data-i18n-html="how_step3_b">
-                  Вносите статьи бюджета и смотрите остаток лимита; при включённых взаиморасчётах сверяйтесь с участниками.
-                  В списке гостей отмечайте RSVP — данные остаются в контексте этого события.
+                  Следите за бюджетом и ответами гостей — всё привязано к этому событию.
                 </p>
               </div>
             </div>
 
             <div class="card muted how-result reveal-on-scroll" data-i18n-aria-label="how_card_aria" aria-label="Итог по приложению">
               <div class="card-title headline" data-i18n="how_card_title">Итог</div>
-              <div class="feature-title headline" data-i18n="how_card_h">Один контекст — одно событие</div>
+              <div class="feature-title headline" data-i18n="how_card_h">Одно событие — один экран обзора</div>
               <p class="feature-text" data-i18n-html="how_card_p">
-                На экране обзора видно, как двигаются задачи, бюджет и участники; дальше вы открываете нужную вкладку.
-                Интерфейс в духе Material Design 3: карточки, акцентный цвет события и спокойная типографика.
+                Сводка по задачам, деньгам и гостям наверху; детали — во вкладках. Понятный интерфейс в стиле Material Design.
               </p>
 
               <div style="margin-top: 16px; border-radius: var(--r-lg); padding: 16px; background: var(--surface-container-lowest)">
@@ -570,21 +496,21 @@
                   <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
                     <div style="display: flex; align-items: center; gap: 10px">
                       <span class="icon" aria-hidden="true" style="color: var(--primary); font-variation-settings: 'FILL' 1, 'wght' 650">dashboard</span>
-                      <strong data-i18n="how_mini1">Обзор и задачи всегда под рукой</strong>
+                      <strong data-i18n="how_mini1">Сводка и задачи сразу на виду</strong>
                     </div>
                     <span class="mini-chip" data-i18n="how_chip1">сводка</span>
                   </div>
                   <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
                     <div style="display: flex; align-items: center; gap: 10px">
                       <span class="icon" aria-hidden="true" style="color: var(--primary); font-variation-settings: 'FILL' 1, 'wght' 650">tune</span>
-                      <strong data-i18n="how_mini2">Дни, бюджет и гости — по необходимости</strong>
+                      <strong data-i18n="how_mini2">Дни, бюджет и гости — когда нужно</strong>
                     </div>
                     <span class="mini-chip" style="background: color-mix(in srgb, var(--secondary-container) 38%, transparent); color: var(--on-secondary-container)" data-i18n="how_chip2">вкладки</span>
                   </div>
                   <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
                     <div style="display: flex; align-items: center; gap: 10px">
                       <span class="icon" aria-hidden="true" style="color: var(--primary); font-variation-settings: 'FILL' 1, 'wght' 650">shield_lock</span>
-                      <strong data-i18n="how_mini3">Данные событий на вашем устройстве</strong>
+                      <strong data-i18n="how_mini3">Данные остаются на телефоне</strong>
                     </div>
                     <span class="mini-chip" style="background: color-mix(in srgb, var(--primary-fixed-dim) 55%, transparent)" data-i18n="how_chip3">локально</span>
                   </div>
@@ -620,7 +546,6 @@
                     fill="#b9f474"
                     opacity="0.2"
                   />
-                  <!-- Mini «экран события»: заголовок + табы + строки обзора -->
                   <rect x="48" y="30" width="184" height="118" rx="18" fill="#ffffff" fill-opacity="0.94" />
                   <rect x="48" y="30" width="184" height="118" rx="18" stroke="#c2c9b4" stroke-opacity="0.5" stroke-width="1" />
                   <rect x="92" y="42" width="96" height="6" rx="3" fill="#424939" opacity="0.35" />
@@ -687,8 +612,7 @@
               </summary>
               <div class="faq-panel">
                 <div class="faq-body" data-i18n-html="faq1_a">
-                  Для личных мероприятий: свадьба, день рождения, юбилей, поездка на несколько дней, вечеринка и другие
-                  поводы. В приложении одна и та же схема: событие → задачи (и при необходимости дни), бюджет, участники.
+                  Свадьба, день рождения, поездка, вечеринка — любой личный повод. Схема одна: событие, задачи, бюджет, гости.
                 </div>
               </div>
             </details>
@@ -700,8 +624,7 @@
               </summary>
               <div class="faq-panel">
                 <div class="faq-body" data-i18n-html="faq2_a">
-                  Да. У каждого события свой набор задач, статей бюджета и участников; переключаясь между карточками в
-                  списке, вы работаете только с выбранным мероприятием.
+                  Да. У каждого события свои задачи, деньги и гости; в списке выбираете карточку — и работаете только с ней.
                 </div>
               </div>
             </details>
@@ -713,8 +636,7 @@
               </summary>
               <div class="faq-panel">
                 <div class="faq-body" data-i18n-html="faq3_a">
-                  Задачи связаны с дедлайнами и днями события, бюджет — с лимитом и статьями, участники — с RSVP. На
-                  обзоре видны сводные цифры; детали открываются во вкладках без ручной сборки таблиц.
+                  Всё связано: сроки, лимит денег, кто придёт. Сводка на одном экране — без ручных таблиц.
                 </div>
               </div>
             </details>
@@ -726,9 +648,7 @@
               </summary>
               <div class="faq-panel">
                 <div class="faq-body" data-i18n-html="faq4_a">
-                  Сейчас Plantaska ориентирована на <strong>личное использование</strong>: данные событий хранятся локально
-                  на устройстве, общего облачного аккаунта и одновременного редактирования с другими людьми нет. Обмен
-                  деталями удобно вести вне приложения — как вам привычнее.
+                  Это приложение для <strong>одного человека на одном телефоне</strong>: данные не в облаке, совместного редактирования нет. Договаривайтесь с близкими как удобно — в мессенджере или на словах.
                 </div>
               </div>
             </details>

@@ -4,9 +4,9 @@
  */
 var I18N_MESSAGES = {
   ru: {
-    meta_title: "Plantaska — даты, задачи, бюджет и гости в одном приложении",
+    meta_title: "Plantaska — праздник и поездка: задачи, бюджет, гости",
     meta_desc:
-      "Plantaska — локальное приложение для личных мероприятий: даты и дни, задачи с дедлайнами и напоминаниями, бюджет со статьями и взаиморасчётами, участники с RSVP.",
+      "Plantaska — приложение для личных праздников и поездок: задачи, бюджет, гости и напоминания. Всё в одном событии, данные на телефоне.",
     brand_aria: "Plantaska — на главную",
     logo_alt: "Логотип Plantaska",
     brand_tagline: "Планируйте события без суеты",
@@ -19,9 +19,9 @@ var I18N_MESSAGES = {
     lang_group_aria: "Язык интерфейса",
     lang_ru: "RU",
     lang_en: "EN",
-    hero_kicker: "Планирование личных мероприятий: от одной даты до нескольких дней подряд",
-    hero_h1: "От идеи — до гостей, задач и бюджета.",
-    hero_lead: "Планируйте события без суеты",
+    hero_kicker: "Для свадьбы, дня рождения или поездки на несколько дней",
+    hero_h1: "Планируй события от путешествий до свадьбы",
+    hero_lead: "Задачи, деньги и список гостей рядом, без таблиц и хаоса в заметках",
     hero_cta_aria: "Основные действия",
     hero_dl_aria: "Перейти к кнопкам App Store и Google Play",
     hero_dl: "Скачать приложение",
@@ -49,70 +49,65 @@ var I18N_MESSAGES = {
     mock_guests_sub: "24 из 40 придут",
     bento_aria: "Ключевые возможности",
     feat_event_title: "Событие",
-    feat_event_h: "Имя, даты и вкладки по ситуации",
+    feat_event_h: "Имя, даты и вкладки",
     feat_event_p:
-      "У каждого события — название, иконка типа и акцентный цвет. Дата одна или период из нескольких дней: тогда появляется вкладка «Дни» с задачами по каждому дню. Общий лимит бюджета и валюта задаются при создании; вкладку участников можно сразу не включать, если она пока не нужна.",
+      "Одна дата или несколько дней — тогда появятся «Дни» и задачи по дню. Цвет, иконка, бюджет и гости — по желанию.",
     feat_event_pill1: "дата и период",
     feat_event_pill2: "цвет и иконка",
     feat_event_pill3: "обзор и табы",
     feat_event_pills_aria: "Возможности события",
     feat_tasks_title: "Задачи",
-    feat_tasks_h: "Дни, дедлайны, локальные напоминания",
+    feat_tasks_h: "Сроки и напоминания",
     feat_tasks_p:
-      "Задача с описанием, статусом (в работе, выполнена, отменена) и привязкой к дню события. Для срока указывается дедлайн; при желании планируется <strong>локальное напоминание</strong> на устройстве. После выполнения можно оставить заметку — например ссылку или итог.",
+      "Список дел по событию: день (если дней несколько), дедлайн и по желанию <strong>напоминание на телефоне</strong>.",
     feat_tasks_pill1: "статусы",
     feat_tasks_pill2: "дедлайн",
     feat_tasks_pill3: "напоминание",
     feat_budget_title: "Бюджет",
-    feat_budget_h: "Статьи расходов и взаиморасчёты",
+    feat_budget_h: "Лимит, статьи, «кто кому должен»",
     feat_budget_p:
-      "Общий лимит и список статей: у каждой — сумма, кто платил и кому относится расход. Если включить <strong>взаиморасчёты</strong>, приложение посчитает, кто кому должен, с учётом участников. Прогресс по лимиту видно на экране бюджета.",
+      "Вносите расходы и видите остаток лимита. Включите <strong>взаиморасчёты</strong> — приложение подскажет баланс между участниками.",
     feat_budget_pill1: "лимит",
     feat_budget_pill2: "статьи",
     feat_budget_pill3: "взаиморасчёты",
     feat_guests_title: "Участники",
-    feat_guests_h: "Контакты и RSVP",
+    feat_guests_h: "Контакты и кто придёт",
     feat_guests_p:
-      "Имя, телефон, email и Telegram; статусы приглашения и отклика («придёт», «не придёт», приглашён и т.д.). Участники связаны с бюджетом: кто платил и между кем делится расход. Вкладку гостей при создании события можно отключить и включить позже.",
+      "Список гостей с контактами и статусом ответа. Участники связаны с бюджетом, вкладку можно включить позже.",
     feat_guests_pill1: "список",
     feat_guests_pill3: "контакты",
     feat_list_title: "Мои события",
-    feat_list_h: "Список карточек и данные на устройстве",
+    feat_list_h: "Все планы в одном списке",
     feat_list_p:
-      "Все события на одном экране: откройте карточку, чтобы перейти к обзору и вкладкам. Свайп вправо — редактировать, влево — удалить (с подтверждением); потяните список вниз для обновления. Данные хранятся <strong>локально</strong> в приложении на вашем устройстве.",
+      "Карточки событий на одном экране. Данные хранятся <strong>только на вашем телефоне</strong> — без облака и общего аккаунта.",
     feat_list_pill1: "свайпы",
     feat_list_pill2: "обновление",
     feat_list_pill3: "локально",
     screens_section_aria: "Экраны приложения",
-    screens_h2: "Экраны приложения",
-    screens_intro:
-      "Ниже — фрагменты интерфейса: список событий, обзор с вкладками, бюджет, участники, задачи, план по дням и профиль. Ленту можно листать горизонтально; на тач‑экранах полоса прокрутки обычно видна во время движения.",
+    screens_h2: "Как выглядит в телефоне",
+    screens_intro: "Реальные экраны приложения. Листайте вбок — как в галерее.",
     shots_gallery_aria: "Галерея скриншотов",
     shots_rail_aria: "Галерея скриншотов, прокрутка в сторону",
     shot1_title: "Список событий",
-    shot1_sub:
-      "Карточки с датой и статусом; пустой экран подсказывает создать первое событие, иначе — плавающая кнопка «+».",
+    shot1_sub: "Все события списком; пустой экран предлагает создать первое.",
     shot1_alt: "Скриншот Plantaska: экран «Мои события»",
     shot2_title: "Обзор и вкладки",
-    shot2_sub:
-      "Сводка по задачам, бюджету и участникам; сверху — название и дата. Вкладки «Дни» и «Бюджет» появляются, когда заданы период или лимит.",
+    shot2_sub: "Сводка сверху; вкладки «Дни» и «Бюджет» — когда нужны.",
     shot2_alt: "Скриншот: обзор события Plantaska",
     shot3_title: "Бюджет события",
-    shot3_sub: "Статьи расходов, прогресс по лимиту; при включённых взаиморасчётах и участниках — кто кому должен.",
+    shot3_sub: "Статьи расходов и остаток лимита; при взаиморасчётах — баланс между людьми.",
     shot3_alt: "Скриншот: бюджет события Plantaska",
     shot4_title: "Участники",
-    shot4_sub: "Список с контактами и RSVP; статусы приглашения и отклика отображаются в карточке участника.",
+    shot4_sub: "Контакты и RSVP в карточке каждого гостя.",
     shot4_alt: "Скриншот: участники события Plantaska",
     shot5_title: "Задачи",
-    shot5_sub: "Активные и выполненные блоки, фильтр по дням события, дедлайн и опция локального напоминания.",
+    shot5_sub: "Сделано и в работе; фильтр по дням, сроки и напоминания.",
     shot5_alt: "Скриншот: задачи события Plantaska",
     shot6_title: "Вкладка «Дни»",
-    shot6_sub:
-      "Для событий с несколькими датами: карточки по дням, описание со ссылками и задачи, привязанные к выбранному дню.",
+    shot6_sub: "Несколько дней — план по дням, заметки и задачи к выбранной дате.",
     shot6_alt: "Скриншот: экран дней в путешествии Plantaska",
     shot7_title: "Профиль",
-    shot7_sub:
-      "Имя и контакты профиля (локально), тема оформления, язык интерфейса, повтор онбординга и сведения о версии.",
+    shot7_sub: "Тема, язык, контакты профиля и версия приложения.",
     shot7_alt: "Скриншот: профиль пользователя Plantaska",
     stores_group_aria: "Ссылки на магазины приложений",
     store_as_aria: "Загрузить в App Store",
@@ -120,25 +115,22 @@ var I18N_MESSAGES = {
     store_as_alt: "Загрузить в App Store",
     store_gp_alt: "Доступно в Google Play",
     how_section_aria: "Как это работает",
-    how_h2: "Как устроено планирование в Plantaska",
+    how_h2: "Три простых шага",
     how_steps_aria: "Шаги",
-    how_step1_t: "Создайте событие",
-    how_step1_b:
-      "Название, иконка типа мероприятия и акцентный цвет; одна дата или период из нескольких дней. При необходимости задайте лимит бюджета и валюту, включите вкладку участников и режим взаиморасчётов.",
-    how_step2_t: "Разложите подготовку",
-    how_step2_b:
-      "Добавляйте задачи с описанием, привязкой к дню (если дней несколько) и дедлайном. Отмечайте выполнение, при необходимости включайте напоминание на устройстве.",
-    how_step3_t: "Держите бюджет и гостей под контролем",
-    how_step3_b:
-      "Вносите статьи бюджета и смотрите остаток лимита; при включённых взаиморасчётах сверяйтесь с участниками. В списке гостей отмечайте RSVP — данные остаются в контексте этого события.",
+    how_step1_t: "Событие",
+    how_step1_b: "Название, дата или несколько дней, цвет. При желании — лимит бюджета и список гостей.",
+    how_step2_t: "Задачи",
+    how_step2_b: "Разложите подготовку по делам, срокам и напоминаниям — в том числе по дням поездки.",
+    how_step3_t: "Деньги и гости",
+    how_step3_b: "Следите за бюджетом и ответами гостей — всё привязано к этому событию.",
     how_card_aria: "Итог по приложению",
     how_card_title: "Итог",
-    how_card_h: "Один контекст — одно событие",
+    how_card_h: "Одно событие — один экран обзора",
     how_card_p:
-      "На экране обзора видно, как двигаются задачи, бюджет и участники; дальше вы открываете нужную вкладку. Интерфейс в духе Material Design 3: карточки, акцентный цвет события и спокойная типографика.",
-    how_mini1: "Обзор и задачи всегда под рукой",
-    how_mini2: "Дни, бюджет и гости — по необходимости",
-    how_mini3: "Данные событий на вашем устройстве",
+      "Сводка по задачам, деньгам и гостям наверху; детали — во вкладках. Понятный интерфейс в стиле Material Design.",
+    how_mini1: "Сводка и задачи сразу на виду",
+    how_mini2: "Дни, бюджет и гости — когда нужно",
+    how_mini3: "Данные остаются на телефоне",
     how_chip1: "сводка",
     how_chip2: "вкладки",
     how_chip3: "локально",
@@ -147,25 +139,24 @@ var I18N_MESSAGES = {
     faq_section_aria: "Вопросы и ответы",
     faq1_q: "Для каких событий подходит Plantaska?",
     faq1_a:
-      "Для личных мероприятий: свадьба, день рождения, юбилей, поездка на несколько дней, вечеринка и другие поводы. В приложении одна и та же схема: событие → задачи (и при необходимости дни), бюджет, участники.",
+      "Свадьба, день рождения, поездка, вечеринка — любой личный повод. Схема одна: событие, задачи, бюджет, гости.",
     faq2_q: "Можно ли вести несколько событий одновременно?",
     faq2_a:
-      "Да. У каждого события свой набор задач, статей бюджета и участников; переключаясь между карточками в списке, вы работаете только с выбранным мероприятием.",
+      "Да. У каждого события свои задачи, деньги и гости; в списке выбираете карточку — и работаете только с ней.",
     faq3_q: "Чем это лучше заметок и таблиц?",
-    faq3_a:
-      "Задачи связаны с дедлайнами и днями события, бюджет — с лимитом и статьями, участники — с RSVP. На обзоре видны сводные цифры; детали открываются во вкладках без ручной сборки таблиц.",
+    faq3_a: "Всё связано: сроки, лимит денег, кто придёт. Сводка на одном экране — без ручных таблиц.",
     faq4_q: "Можно ли планировать вместе с другими в одном аккаунте?",
     faq4_a:
-      "Сейчас Plantaska ориентирована на <strong>личное использование</strong>: данные событий хранятся локально на устройстве, общего облачного аккаунта и одновременного редактирования с другими людьми нет. Обмен деталями удобно вести вне приложения — как вам привычнее.",
+      "Это приложение для <strong>одного человека на одном телефоне</strong>: данные не в облаке, совместного редактирования нет. Договаривайтесь с близкими как удобно — в мессенджере или на словах.",
     footer_aria: "Контакты и правовая информация",
     footer_tagline: "Планируйте события без суеты",
     footer_privacy: "Политика конфиденциальности — по запросу на почту",
     footer_rights: "Plantaska. Все права защищены."
   },
   en: {
-    meta_title: "Plantaska — dates, tasks, budget, and guests in one app",
+    meta_title: "Plantaska — parties and trips: tasks, budget, guests",
     meta_desc:
-      "Plantaska — a local app for personal events: dates and days, tasks with deadlines and reminders, budget with line items and settling up, guests with RSVP.",
+      "Plantaska — for birthdays, weddings, and multi-day trips: tasks, budget, guests, and reminders in one event. Data stays on your phone.",
     brand_aria: "Plantaska — home",
     logo_alt: "Plantaska logo",
     brand_tagline: "Plan events without the chaos",
@@ -178,9 +169,9 @@ var I18N_MESSAGES = {
     lang_group_aria: "Interface language",
     lang_ru: "RU",
     lang_en: "EN",
-    hero_kicker: "Plan personal events: from a single date to several days in a row",
-    hero_h1: "From the idea — to guests, tasks, and budget.",
-    hero_lead: "Plan events without the chaos",
+    hero_kicker: "For a wedding, birthday, or a multi-day trip",
+    hero_h1: "Plan events from trips to weddings",
+    hero_lead: "Tasks, money, and your guest list together — no messy notes or spreadsheets",
     hero_cta_aria: "Primary actions",
     hero_dl_aria: "Go to App Store and Google Play download buttons",
     hero_dl: "Download the app",
@@ -208,70 +199,65 @@ var I18N_MESSAGES = {
     mock_guests_sub: "24 of 40 attending",
     bento_aria: "Key features",
     feat_event_title: "Event",
-    feat_event_h: "Name, dates, and tabs as you need them",
+    feat_event_h: "Name, dates, and tabs",
     feat_event_p:
-      "Each event has a name, type icon, and accent color. One date or a multi-day range — then a Days tab appears with tasks per day. Set an overall budget limit and currency when you create the event; you can leave guests off until you need them.",
+      "One date or several — then you get Days and tasks per day. Color, icon, budget, and guests are optional.",
     feat_event_pill1: "date & range",
     feat_event_pill2: "color & icon",
     feat_event_pill3: "overview & tabs",
     feat_event_pills_aria: "Event capabilities",
     feat_tasks_title: "Tasks",
-    feat_tasks_h: "Days, deadlines, local reminders",
+    feat_tasks_h: "Deadlines and reminders",
     feat_tasks_p:
-      "Tasks include a description, status (in progress, done, cancelled), and optional day within the event. Add a deadline; optionally schedule a <strong>local reminder</strong> on your device. After completion, leave a note — e.g. a link or outcome.",
+      "A to-do list for the event: day (if there are several), deadline, and an optional <strong>phone reminder</strong>.",
     feat_tasks_pill1: "statuses",
     feat_tasks_pill2: "deadline",
     feat_tasks_pill3: "reminder",
     feat_budget_title: "Budget",
-    feat_budget_h: "Expense lines and settling up",
+    feat_budget_h: "Limit, lines, who owes whom",
     feat_budget_p:
-      "Overall limit and line items: each has an amount, who paid, and how the expense applies. Turn on <strong>settling up</strong> and the app calculates who owes whom, using participants. Progress against the limit is visible on the budget screen.",
+      "Track spending and what’s left of the limit. Turn on <strong>settling up</strong> to see balances between people.",
     feat_budget_pill1: "limit",
     feat_budget_pill2: "lines",
     feat_budget_pill3: "settle up",
     feat_guests_title: "Guests",
-    feat_guests_h: "Contacts and RSVP",
+    feat_guests_h: "Contacts and who’s coming",
     feat_guests_p:
-      "Name, phone, email, and Telegram; invitation and response statuses (“attending”, “not attending”, invited, etc.). Guests tie into the budget: who paid and how costs are shared. You can disable the guests tab when creating an event and enable it later.",
+      "Guest list with contacts and RSVP. Linked to the budget; you can turn the tab on later.",
     feat_guests_pill1: "list",
     feat_guests_pill3: "contacts",
     feat_list_title: "My events",
-    feat_list_h: "Card list and on-device data",
+    feat_list_h: "Every plan in one list",
     feat_list_p:
-      "All events on one screen: open a card to go to the overview and tabs. Swipe right to edit, left to delete (with confirmation); pull the list down to refresh. Data is stored <strong>locally</strong> in the app on your device.",
+      "Event cards on one screen. Data stays <strong>only on your phone</strong> — no cloud, no shared account.",
     feat_list_pill1: "swipes",
     feat_list_pill2: "refresh",
     feat_list_pill3: "local",
     screens_section_aria: "App screens",
-    screens_h2: "App screens",
-    screens_intro:
-      "Below are UI fragments: event list, overview with tabs, budget, guests, tasks, multi-day plan, and profile. Scroll the strip horizontally; on touch devices the scrollbar usually appears while you scroll.",
+    screens_h2: "What it looks like on your phone",
+    screens_intro: "Real app screens. Swipe sideways like a gallery.",
     shots_gallery_aria: "Screenshot gallery",
     shots_rail_aria: "Screenshot gallery, horizontal scroll",
     shot1_title: "Event list",
-    shot1_sub:
-      "Cards with date and status; an empty state nudges you to create your first event, otherwise a floating “+” button.",
+    shot1_sub: "All events in a list; empty state suggests creating the first one.",
     shot1_alt: "Plantaska screenshot: My events screen",
     shot2_title: "Overview & tabs",
-    shot2_sub:
-      "Summary for tasks, budget, and guests; title and date at the top. Days and Budget tabs appear when a range or limit is set.",
+    shot2_sub: "Summary up top; Days and Budget tabs when you need them.",
     shot2_alt: "Screenshot: Plantaska event overview",
     shot3_title: "Event budget",
-    shot3_sub: "Expense lines and limit progress; with settling up and participants — who owes whom.",
+    shot3_sub: "Spending lines and limit left; with settle-up — balances between people.",
     shot3_alt: "Screenshot: Plantaska event budget",
     shot4_title: "Guests",
-    shot4_sub: "List with contacts and RSVP; invitation and response statuses show on each guest card.",
+    shot4_sub: "Contacts and RSVP on each guest card.",
     shot4_alt: "Screenshot: Plantaska event guests",
     shot5_title: "Tasks",
-    shot5_sub: "Active and completed sections, filter by event days, deadlines, and optional local reminders.",
+    shot5_sub: "Done vs in progress; filter by day, deadlines, reminders.",
     shot5_alt: "Screenshot: Plantaska event tasks",
     shot6_title: "Days tab",
-    shot6_sub:
-      "For multi-day events: cards per day, descriptions with links, and tasks tied to the selected day.",
+    shot6_sub: "Multi-day plan: notes per day and tasks for the day you pick.",
     shot6_alt: "Screenshot: Plantaska multi-day trip screen",
     shot7_title: "Profile",
-    shot7_sub:
-      "Profile name and contacts (local), theme, interface language, replay onboarding, and version info.",
+    shot7_sub: "Theme, language, profile details, and app version.",
     shot7_alt: "Screenshot: Plantaska user profile",
     stores_group_aria: "App store links",
     store_as_aria: "Download on the App Store",
@@ -279,25 +265,22 @@ var I18N_MESSAGES = {
     store_as_alt: "Download on the App Store",
     store_gp_alt: "Get it on Google Play",
     how_section_aria: "How it works",
-    how_h2: "How planning works in Plantaska",
+    how_h2: "Three simple steps",
     how_steps_aria: "Steps",
-    how_step1_t: "Create an event",
-    how_step1_b:
-      "Name, event-type icon, and accent color; one date or a multi-day range. Optionally set a budget limit and currency, enable the guests tab and settling up.",
-    how_step2_t: "Break down prep",
-    how_step2_b:
-      "Add tasks with a description, day link (if there are multiple days), and deadlines. Mark progress and turn on on-device reminders when needed.",
-    how_step3_t: "Keep budget and guests under control",
-    how_step3_b:
-      "Add budget lines and watch the remaining limit; with settling up, reconcile with participants. Track RSVP in the guest list — data stays scoped to that event.",
+    how_step1_t: "Event",
+    how_step1_b: "Name it, pick a date or several days, choose a color. Add a budget cap and guest list if you like.",
+    how_step2_t: "Tasks",
+    how_step2_b: "Break prep into to-dos, dates, and reminders — including per day on a trip.",
+    how_step3_t: "Money & guests",
+    how_step3_b: "Watch spending and RSVPs — everything stays tied to this event.",
     how_card_aria: "Summary of the app",
     how_card_title: "Summary",
-    how_card_h: "One context — one event",
+    how_card_h: "One event — one overview screen",
     how_card_p:
-      "The overview shows how tasks, budget, and guests move; then you open the tab you need. The UI follows Material Design 3: cards, the event accent color, and calm typography.",
-    how_mini1: "Overview and tasks always at hand",
-    how_mini2: "Days, budget, and guests when you need them",
-    how_mini3: "Your event data stays on your device",
+      "Tasks, money, and guests at a glance; details live in tabs. Clear Material-style layout.",
+    how_mini1: "Summary and tasks up front",
+    how_mini2: "Days, budget, guests when needed",
+    how_mini3: "Data stays on your phone",
     how_chip1: "summary",
     how_chip2: "tabs",
     how_chip3: "local",
@@ -306,16 +289,15 @@ var I18N_MESSAGES = {
     faq_section_aria: "Questions and answers",
     faq1_q: "What kinds of events is Plantaska for?",
     faq1_a:
-      "Personal events: weddings, birthdays, anniversaries, multi-day trips, parties, and more. The same flow applies: event → tasks (and days when needed), budget, guests.",
+      "Weddings, birthdays, trips, parties — any personal occasion. Same flow: event, tasks, budget, guests.",
     faq2_q: "Can I run several events at once?",
     faq2_a:
-      "Yes. Each event has its own tasks, budget lines, and guests; switching cards in the list works only on the selected event.",
+      "Yes. Each event has its own tasks, money, and guests — pick a card in the list and work on that one only.",
     faq3_q: "How is this better than notes and spreadsheets?",
-    faq3_a:
-      "Tasks link to deadlines and event days, budget to the limit and line items, guests to RSVP. The overview shows rollups; details live in tabs without hand-built tables.",
+    faq3_a: "It’s connected: deadlines, spending limits, who’s coming. One summary screen — no DIY spreadsheets.",
     faq4_q: "Can we plan together in one account?",
     faq4_a:
-      "Today Plantaska is focused on <strong>personal use</strong>: event data stays locally on the device — there’s no shared cloud account or real-time co-editing with others. Share details outside the app however you prefer.",
+      "It’s for <strong>one person on one phone</strong>: no cloud sync, no shared editing. Coordinate with family and friends however you already do — chat, calls, in person.",
     footer_aria: "Contact and legal",
     footer_tagline: "Plan events without the chaos",
     footer_privacy: "Privacy policy — available on request via email",
@@ -400,6 +382,78 @@ function bindLanguageSwitchers() {
 }
 
 /**
+ * Sticky header height for anchor scroll offset (mobile needs explicit top, not centered block).
+ * @returns {number}
+ */
+function getTopbarAnchorOffset() {
+  var header = document.querySelector(".topbar");
+  if (!header) return 0;
+  return Math.ceil(header.getBoundingClientRect().height);
+}
+
+/**
+ * Narrow viewports: scroll so target top sits just below sticky header (start of block).
+ * Wide: keep previous behavior — vertically centered.
+ * @param {HTMLElement} el
+ * @param {boolean} smooth
+ */
+function scrollToHashTarget(el, smooth) {
+  var behavior = smooth ? "smooth" : "auto";
+  var gap = 12;
+  var preferStart = window.matchMedia("(max-width: 859px)").matches;
+
+  if (preferStart) {
+    var y = el.getBoundingClientRect().top + window.pageYOffset - getTopbarAnchorOffset() - gap;
+    window.scrollTo({ top: Math.max(0, y), behavior: behavior });
+    return;
+  }
+
+  el.scrollIntoView({ behavior: behavior, block: "center" });
+}
+
+/**
+ * Clicks on same-page #links: mobile aligns block start under header; desktop centers.
+ * @param {boolean} smooth - false when prefers-reduced-motion
+ */
+function bindInPageAnchorCenterScroll(smooth) {
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var href = a.getAttribute("href");
+      if (!href || href === "#") return;
+      var isMobile = window.matchMedia("(max-width: 859px)").matches;
+      /* Mobile reliability first: keep native hash navigation (no JS interception). */
+      if (isMobile) return;
+
+      var behavior = smooth ? "smooth" : "auto";
+
+      if (href === "#top") {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: behavior });
+        return;
+      }
+
+      var id = decodeURIComponent(href.slice(1));
+      if (!id) return;
+      var el = document.getElementById(id);
+      if (!el) return;
+
+      e.preventDefault();
+      var run = function () {
+        scrollToHashTarget(el, smooth);
+      };
+      /* Drawer close changes layout: delay by 2 frames for stable mobile offset. */
+      if (a.closest(".nav-drawer")) {
+        requestAnimationFrame(function () {
+          requestAnimationFrame(run);
+        });
+      } else {
+        run();
+      }
+    });
+  });
+}
+
+/**
  * Single bootstrap: i18n, footer year, topbar scroll/progress, drawer close-on-nav, scroll reveals.
  * Runs after DOM parse (use defer on script tag).
  */
@@ -408,6 +462,7 @@ function initLandingApp() {
 
   applyLocale(resolveInitialLang());
   bindLanguageSwitchers();
+  bindInPageAnchorCenterScroll(!reduceMotion);
 
   var yearEl = document.getElementById("y");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
@@ -432,9 +487,11 @@ function initLandingApp() {
   var drawerPanel = document.querySelector(".nav-drawer-panel");
   if (drawerPanel) {
     drawerPanel.addEventListener("click", function (e) {
-      var t = e.target;
-      if (t && t.tagName === "A") {
-        var detailsRoot = t.closest("details");
+      var target = e.target;
+      if (target && target.nodeType === 3) target = target.parentElement;
+      var link = target && target.closest ? target.closest("a") : null;
+      if (link) {
+        var detailsRoot = link.closest("details");
         if (detailsRoot) detailsRoot.removeAttribute("open");
       }
     });

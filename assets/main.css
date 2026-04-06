@@ -606,6 +606,14 @@ a {
   }
 }
 
+/* Native #hash jumps: keep section heads clear of sticky topbar + safe area (esp. mobile). */
+#product-kicker,
+section.hero#product,
+section#how,
+section#faq {
+  scroll-margin-top: max(88px, calc(env(safe-area-inset-top, 0px) + 68px));
+}
+
 .hero {
   padding: var(--s-12) 0 var(--s-10);
 }
@@ -657,7 +665,7 @@ a {
   object-position: center;
 }
 
-/* Bottom illustration on the «Итог» card: overview + tabs, same visual language as hero/budget SVGs. */
+/* «Итог» card: real overview screenshot (or fallback graphic). */
 .how-result-art {
   margin-top: var(--s-6);
   border-radius: var(--r-lg);
@@ -984,6 +992,80 @@ a {
   line-height: 1.55;
 }
 
+/* Screenshot carousel on phones: no 100vw bleed, slide fits viewport, image scales inside. */
+@media (max-width: 859px) {
+  .shots-bleed {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .shots {
+    margin-top: var(--s-6);
+  }
+
+  .shots-rail {
+    gap: 10px;
+    scroll-padding-left: max(14px, env(safe-area-inset-left, 0px));
+    scroll-padding-right: max(14px, env(safe-area-inset-right, 0px));
+  }
+
+  .shots-rail-gutter {
+    width: max(14px, env(safe-area-inset-left, 0px));
+    min-width: max(14px, env(safe-area-inset-left, 0px));
+  }
+
+  .shots-rail::after {
+    width: max(14px, env(safe-area-inset-right, 0px));
+    min-width: max(14px, env(safe-area-inset-right, 0px));
+  }
+
+  .shot {
+    --shot-slide-w: clamp(248px, 74vw, 320px);
+    flex: 0 0 var(--shot-slide-w);
+    width: var(--shot-slide-w);
+    max-width: var(--shot-slide-w);
+    min-width: var(--shot-slide-w);
+    border-radius: var(--r-lg);
+    max-height: none;
+    display: block;
+  }
+
+  .shot-inner {
+    min-height: auto;
+    max-height: none;
+    padding: 14px;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  /* Mobile like desktop: screenshot fills slide width with minimal side gutters. */
+  .shot-inner img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: min(46dvh, 420px);
+    border-radius: calc(var(--r-lg) - 14px);
+    box-shadow: 0 30px 60px rgba(25, 29, 20, 0.08);
+    display: block;
+    margin-inline: auto;
+  }
+
+  .shot-meta {
+    padding: 10px 12px 12px;
+  }
+
+  .shot-title {
+    font-size: clamp(17px, 4.6vw, 20px);
+  }
+
+  .shot-sub {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+}
+
 .card {
   border-radius: var(--r-lg);
   padding: 22px;
@@ -1032,6 +1114,34 @@ a {
   margin: 0;
   color: color-mix(in srgb, var(--on-surface-variant) 88%, #000);
   line-height: 1.65;
+}
+
+/* Gallery intro: slightly larger type for short line under the heading. */
+.screens-intro {
+  font-size: clamp(15px, 2.8vw, 17px);
+}
+
+/* Muted bento cards: soft top accent so blocks feel illustrated without UI screenshots. */
+.card.muted:not(.how-result) {
+  position: relative;
+  overflow: hidden;
+}
+
+.card.muted:not(.how-result)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--primary) 55%, transparent),
+    color-mix(in srgb, var(--primary-container) 70%, transparent),
+    color-mix(in srgb, var(--secondary-container) 45%, transparent)
+  );
+  opacity: 0.85;
+  pointer-events: none;
 }
 
 .pill-row {
