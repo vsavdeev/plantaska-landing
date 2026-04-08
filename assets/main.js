@@ -1,5 +1,6 @@
 /**
- * Plantaska landing runtime (defer): i18n tables, locale DOM updates, scroll reveals, header progress, drawer close-on-tap.
+ * Plantaska landing runtime (defer): i18n tables, locale DOM updates, per-locale screenshot src
+ * (data-locale-src-ru / data-locale-src-en), scroll reveals, header progress, drawer close-on-tap.
  * I18N keys match data-i18n / data-i18n-html / data-i18n-aria-label / data-i18n-alt in index.html.
  */
 var I18N_MESSAGES = {
@@ -345,6 +346,13 @@ function applyLocale(lang) {
       var key = el.getAttribute(b.attr);
       if (key) b.apply(el, key);
     });
+  });
+
+  /** Swaps screenshot URLs for EN vs RU where data-locale-src-* is set. */
+  document.querySelectorAll("img[data-locale-src-ru][data-locale-src-en]").forEach(function (img) {
+    var ru = img.getAttribute("data-locale-src-ru");
+    var en = img.getAttribute("data-locale-src-en");
+    if (ru && en) img.src = lang === "en" ? en : ru;
   });
 
   var isEn = lang === "en";
