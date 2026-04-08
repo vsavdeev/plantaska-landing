@@ -150,7 +150,7 @@ var I18N_MESSAGES = {
       "Это приложение для <strong>одного человека на одном телефоне</strong>: данные не в облаке, совместного редактирования нет. Договаривайтесь с близкими как удобно — в мессенджере или на словах.",
     footer_aria: "Контакты и правовая информация",
     footer_tagline: "Планируйте события без суеты",
-    footer_privacy: "Политика конфиденциальности — по запросу на почту",
+    footer_privacy: "Политика конфиденциальности",
     footer_rights: "Plantaska. Все права защищены."
   },
   en: {
@@ -300,7 +300,7 @@ var I18N_MESSAGES = {
       "It’s for <strong>one person on one phone</strong>: no cloud sync, no shared editing. Coordinate with family and friends however you already do — chat, calls, in person.",
     footer_aria: "Contact and legal",
     footer_tagline: "Plan events without the chaos",
-    footer_privacy: "Privacy policy — available on request via email",
+    footer_privacy: "Privacy policy",
     footer_rights: "Plantaska. All rights reserved."
   }
 };
