@@ -135,8 +135,8 @@ var I18N_MESSAGES = {
     how_chip1: "сводка",
     how_chip2: "вкладки",
     how_chip3: "локально",
-    how_btn_as_aria: "Перейти к блоку загрузки в App Store и Google Play",
-    how_btn_gp_aria: "Перейти к блоку загрузки в Google Play",
+    how_btn_as_aria: "Открыть страницу приложения в App Store",
+    how_btn_gp_aria: "Открыть страницу приложения в Google Play",
     faq_section_aria: "Вопросы и ответы",
     faq1_q: "Для каких событий подходит Plantaska?",
     faq1_a:
@@ -285,8 +285,8 @@ var I18N_MESSAGES = {
     how_chip1: "summary",
     how_chip2: "tabs",
     how_chip3: "local",
-    how_btn_as_aria: "Go to the App Store and Google Play download section",
-    how_btn_gp_aria: "Go to the Google Play download section",
+    how_btn_as_aria: "Open the app page on the App Store",
+    how_btn_gp_aria: "Open the app page on Google Play",
     faq_section_aria: "Questions and answers",
     faq1_q: "What kinds of events is Plantaska for?",
     faq1_a:
