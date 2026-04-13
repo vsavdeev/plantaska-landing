@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.plantaska.myapp",
+      "sha256_cert_fingerprints": [
+        "1B:71:EB:DB:8E:A2:33:6B:E8:B9:4E:A6:5F:3F:EC:7E:21:A4:B0:1C:E0:81:0B:DE:D3:B6:11:9C:44:9D:26:91"
+      ]
+    }
+  }
+]
